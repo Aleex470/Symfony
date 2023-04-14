@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
+/* Variables */
+
+:root{
+    --main-color: #47cad2;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -26,7 +32,7 @@ a{
 }
 
 section{
-   padding: 5rem 0;
+   padding: 2rem 0;
 }
 
 /* Images */
@@ -36,10 +42,11 @@ section{
 }
 
 .header-img{
-    width: 90%;
+    width: 95%;
     height: 450px;
     object-fit: cover;
     border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.559);
 }
 
 /* Fin Images */
@@ -61,7 +68,7 @@ input[type=text]{
 .recherche-btn{
     padding: 5px 10px;
     color: #fff;
-    background-color: rgb(70, 192, 230);
+    background-color: var(--main-color);
     border-radius: 50%;
 }
 
@@ -80,7 +87,7 @@ a.btn-identifier:hover{
 }
 
 .fa-cart-shopping{
-    color: rgb(70, 192, 230)
+    color: var(--main-color);
 }
 
 /* Header */
@@ -90,13 +97,98 @@ a.btn-identifier:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4.5rem;
 }
 
 .header-text{
     position: absolute;
+    width: 70%;
+    text-align: center;
 }
 
 .header-title{
-    font-size: 50px;
+    font-size: 45px;
     color: #fff;
+}
+
+.container-header.header-text.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 4px 20px;
+}
+
+input[type=text] {
+    border: 0;
+    flex: 1;
+}
+
+
+
+/* Cards */
+
+.container-card{
+   padding: 0 40px;
+}
+
+.header-container-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+h3.title-destination{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.fleche-directive{
+   font-size: 20px;
+   font-weight: 500;
+}
+
+
+.fleche-directive #fleche2{
+    color: rgb(141, 141, 141);
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card{
+    border-radius: 20px;
+}
+
+.secteur-img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.content-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+p.secteur-title{
+    font-weight: 500;
+}
+
+.btn-card{
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 50px;
 }
