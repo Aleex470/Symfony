@@ -13,11 +13,11 @@ class Tarifer
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?int $id_1 = null;
+    // #[ORM\Column(nullable: true)]
+    // private ?int $id_1 = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?int $id_2 = null;
+    // #[ORM\Column(nullable: true)]
+    // private ?int $id_2 = null;
 
     #[ORM\Column(nullable: true)]
     private ?float $tarif = null;
@@ -27,29 +27,29 @@ class Tarifer
         return $this->id;
     }
 
-    public function getId1(): ?int
-    {
-        return $this->id_1;
-    }
+    // public function getId1(): ?int
+    // {
+    //     return $this->id_1;
+    // }
 
-    public function setId1(?int $id_1): self
-    {
-        $this->id_1 = $id_1;
+    // public function setId1(?int $id_1): self
+    // {
+    //     $this->id_1 = $id_1;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 
-    public function getId2(): ?int
-    {
-        return $this->id_2;
-    }
+    // public function getId2(): ?int
+    // {
+    //     return $this->id_2;
+    // }
 
-    public function setId2(?int $id_2): self
-    {
-        $this->id_2 = $id_2;
+    // public function setId2(?int $id_2): self
+    // {
+    //     $this->id_2 = $id_2;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 
     public function getTarif(): ?float
     {

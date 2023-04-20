@@ -13,8 +13,8 @@ class Participer
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?int $id_1 = null;
+    // #[ORM\Column(nullable: true)]
+    // private ?int $id_1 = null;
 
     #[ORM\Column(nullable: true)]
     private ?int $nombre = null;
@@ -24,17 +24,17 @@ class Participer
         return $this->id;
     }
 
-    public function getId1(): ?int
-    {
-        return $this->id_1;
-    }
+    // public function getId1(): ?int
+    // {
+    //     return $this->id_1;
+    // }
 
-    public function setId1(?int $id_1): self
-    {
-        $this->id_1 = $id_1;
+    // public function setId1(?int $id_1): self
+    // {
+    //     $this->id_1 = $id_1;
 
-        return $this;
-    }
+    //     return $this;
+    // }
 
     public function getNombre(): ?int
     {

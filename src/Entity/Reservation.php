@@ -13,37 +13,67 @@ class Reservation
     #[ORM\Column]
     private ?int $id = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?int $id_reserver = null;
+    #[ORM\ManyToOne(inversedBy: 'reservation')]
+    private ?Client $no = null;
 
-    #[ORM\Column(nullable: true)]
-    private ?int $id_concerner = null;
+    #[ORM\ManyToOne(inversedBy: 'reservation')]
+    private ?Traversee $traversee = null;
+
+    // #[ORM\Column(nullable: true)]
+    // private ?int $id_reserver = null;
+
+    // #[ORM\Column(nullable: true)]
+    // private ?int $id_concerner = null;
 
     public function getId(): ?int
     {
         return $this->id;
     }
 
-    public function getIdReserver(): ?int
+    // public function getIdReserver(): ?int
+    // {
+    //     return $this->id_reserver;
+    // }
+
+    // public function setIdReserver(?int $id_reserver): self
+    // {
+    //     $this->id_reserver = $id_reserver;
+
+    //     return $this;
+    // }
+
+    // public function getIdConcerner(): ?int
+    // {
+    //     return $this->id_concerner;
+    // }
+
+    // public function setIdConcerner(?int $id_concerner): self
+    // {
+    //     $this->id_concerner = $id_concerner;
+
+    //     return $this;
+    // }
+
+    public function getNo(): ?Client
     {
-        return $this->id_reserver;
+        return $this->no;
     }
 
-    public function setIdReserver(?int $id_reserver): self
+    public function setNo(?Client $no): self
     {
-        $this->id_reserver = $id_reserver;
+        $this->no = $no;
 
         return $this;
     }
 
-    public function getIdConcerner(): ?int
+    public function getTraversee(): ?Traversee
     {
-        return $this->id_concerner;
+        return $this->traversee;
     }
 
-    public function setIdConcerner(?int $id_concerner): self
+    public function setTraversee(?Traversee $traversee): self
     {
-        $this->id_concerner = $id_concerner;
+        $this->traversee = $traversee;
 
         return $this;
     }
