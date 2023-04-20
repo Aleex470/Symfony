@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,15 +17,14 @@
 
 
 </head>
+
 <body>
 
     <nav>
         <div class="container-debut-nav">
-            <div>
-                <a href="./index.html">
-                    <img class="img-logo" src="ressources/ScilyLinesLogo.png" alt="">
-                </a>
-            </div>
+            <a href="./index.html">
+                <img class="img-logo" src="ressources/ScilyLinesLogo.png" alt="">
+            </a>
 
             <div class="container-search-bar">
                 <form action="">
@@ -32,7 +32,7 @@
                     <div class="search-bar-nav">
 
                         <i class="fa-regular fa-magnifying-glass icon-search-bar"></i>
-                        
+
                         <input type="text" name="recherche" placeholder="Chercher votre destination ... ">
 
                         <a class="recherche-btn" href="">
@@ -41,7 +41,7 @@
 
                     </div>
 
-                
+
                 </form>
             </div>
         </div>
@@ -51,41 +51,94 @@
             <a class="btn-identifier" href="./connexion.html">
                 S'identifier
             </a>
-           
+
             <i class="fa-solid fa-cart-shopping"></i>
-            
+
         </div>
 
     </nav>
 
 
-    <section>
+    <!-- Fin header -->
 
-        <div class="container-header">
+    <section class="section section-resa">
 
-            <img class="header-img" src="ressources/plage-femme.jpg" alt="">
+        <div class="container-retour">
+            <a class="retour-link" href="./index.html">
+                < Retour </a>
+        </div>
 
-            <div class="header-text">
+        <div class="container-resa">
+            <div class="container-img-resa">
+                <img class="img-resa" src="./ressources/Messine.jpg" alt="">
+            </div>
 
-                <h1 class="header-title">Touvez votre destination de rêve !</h1>
-
-                <div>
-                    <form action="">
+            <div class="container-liaison-resa reserv">
+                <h2 class="titre-resa">Palerme - Ustica</h2>
                 
-                        <div class="search-bar">
-                
-                            <i class="fa-regular fa-magnifying-glass icon-search-bar"></i>
-                
-                            <input type="text" name="recherche" placeholder="Chercher votre destination ... ">
-                
-                            <a class="recherche-btn" href="">
-                                <i class="fa-regular fa-arrow-right"></i>
-                            </a>
+                <div class="container-reserv">
+                    <div class="gare">
+                        <label for="">Gare de départ</label>
+                        <input class="reserv-input" type="text" value="Palerme">
+                    </div>
 
+                    <img class="img-switch" src="./ressources/switch.png" alt="">
+
+                    <div class="gare">
+                        <label for="">Gare d'arrivée</label>
+                        <input class="reserv-input" type="text" value="Ustica">
+                    </div>
+                </div>
+
+                <div class="container-reserv">
+                    <div class="gare">
+                        <label for="">Date de départ</label>
+                        <input type="date" placeholder="JJ/MM/AAAA">
+                    </div>
+
+                    <div class="gare">
+                        <label for="">Date d'arrivée</label>
+                        <input type="date" placeholder="JJ/MM/AAAA">
+                    </div>
+                </div>
+                
+                <div class="container-reserv radio">
+                    <p>Aller-retour</p>
+                    <input type="radio">
+                </div>
+
+                <div class="container-reserv">
+                    <div class="container-reserv">
+                        <div>
+                            <p style="text-align: center;">Adulte</p>
+                            <img class="img-personne" src="./ressources/Adulte.png" alt="">
                         </div>
-                
-                
-                    </form>
+                        <div class="container-reserv">
+                            <span> - </span>
+                            <p>1</p>
+                            <span> + </span>
+                        </div>
+                    </div>
+
+                    <div class="container-reserv">
+                        <div>
+                            <p style="text-align: center;">Enfant</p>
+                            <img class="img-personne" src="./ressources/enfant.png" alt="">
+                        </div>
+                        <div class="container-reserv">
+                            <span> - </span>
+                            <p>1</p>
+                            <span> + </span>
+                        </div>
+                    </div>
+                </div>
+
+                <input class="reserv-input" type="email" name="" id="" placeholder="Saisir votre adresse Email ...">
+
+                <div class="container-btn-reserv">
+                    <a class="btn-connexion btn-reserv" href="./index.html">Réserver</a>
+                </div>
+
                 </div>
 
             </div>
@@ -93,98 +146,7 @@
 
     </section>
 
-
-    <section>
-
-        <div class="container-card">
-
-            <div class="header-container-card">
-
-                <h3 class="title-destination">Destination principales</h3>
-                <div class="fleche-directive">
-                    <a href="" id="fleche1"><</a>
-                    <a href="" id="fleche2">></a>
-                </div>
-            </div>
-
-            <div class="cards">
-
-                <div class="card">
-
-                    <div class="header-card">
-                        <img class="secteur-img" src="ressources/Palerme.jpg" alt="">
-                    </div>
-
-                    <div class="content-card">
-
-                        <p class="secteur-title">Palerme</p>
-
-                        <a class="btn-card" href="./palerme.html">
-                            Voir trajet
-                        </a>
-
-                    </div>
-
-                </div>
-
-                <div class="card">
-                
-                    <div class="header-card">
-                        <img class="secteur-img" src="ressources/Messine.jpg" alt="">
-                    </div>
-                
-                    <div class="content-card">
-                
-                        <p>Messine</p>
-                
-                        <a class="btn-card" href="./messine.html">
-                            Voir trajet
-                        </a>
-                
-                    </div>
-                
-                </div>
-
-                <div class="card">
-                
-                    <div class="header-card">
-                        <img class="secteur-img" src="ressources/Milizzo1.jpg" alt="">
-                    </div>
-                
-                    <div class="content-card">
-                
-                        <p>Milazzo</p>
-                
-                        <a class="btn-card" href="./milazzo.html">
-                            Voir trajet
-                        </a>
-                
-                    </div>
-                
-                </div>
-
-                <div class="card">
-                
-                    <div class="header-card">
-                        <img class="secteur-img" src="ressources/Trapani.jpg" alt="">
-                    </div>
-                
-                    <div class="content-card">
-                
-                        <p class="secteur-title">Trapani</p>
-                        
-                        <a class="btn-card" href="./trapani.html">
-                            Voir trajet
-                        </a>
-                
-                    </div>
-                
-                </div>
-
-            </div>
-        </div>
-
-    </section>
+    <!-- Debut footer -->
 
     <footer>
         <div class="container-footer">
@@ -210,11 +172,11 @@
                 </div>
             </div>
 
-            <div class="footer-col" >
+            <div class="footer-col">
                 <div class="footer-row">
                     <div class="footer-element">
                         <p class="footer-ul">Acheter</p>
-                       <ul>
+                        <ul>
                             <li>
                                 <a href="./palerme.html" class="footer-link">
                                     Palerme
@@ -223,14 +185,14 @@
                             <li><a class="footer-link" href="./messine.html">Messine</a></li>
                             <li><a class="footer-link" href="./milazzo.html">Milazz</a></li>
                             <li><a class="footer-link" href="./trapani.html">Trapani</a></li>
-                       </ul>
+                        </ul>
                     </div>
 
                     <div class="footer-element">
                         <p class="footer-ul">Aide</p>
                         <ul>
-                            <li><a href="" class="footer-link">Réclamation</a></li>
-                            <li><a href="" class="footer-link">Annulation</a></li>
+                            <li><a href="./reclamation.html" class="footer-link">Réclamation</a></li>
+                            <li><a href="./annulation.html" class="footer-link">Annulation</a></li>
                         </ul>
                     </div>
                 </div>
@@ -244,7 +206,7 @@
                             Contact
                         </a>
                     </div>
-                
+
 
                     <div>
                         <h4>Nous suivre</h4>
@@ -259,6 +221,9 @@
 
         </div>
     </footer>
-    
+
 </body>
+
 </html>
+
+<!-- Fin footer -->
